@@ -2,7 +2,7 @@ package org.fascinate.encody;
 
 /**
  *
- * @author d.schlobach
+ * @author Minenblock, Kuhlklay, Nicolas
  */
 public class encody {
 
