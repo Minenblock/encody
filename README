@@ -1,0 +1,9 @@
+# Welcome to encody!
+
+A simple CLI-Tool that encrypts a File to a Hash (AES-GCM) with a given Password.
+
+
+# How to use
+
+- git pull https://github.com/Minenblock/encody
+- idk just run Encody.jar with Temurin JDK 17 or smth 
