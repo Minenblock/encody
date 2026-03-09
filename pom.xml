@@ -10,5 +10,10 @@
         <exec.mainClass>org.fascinate.encody.encody</exec.mainClass>
     </properties>
     <dependencies>
+        <dependency>
+  <groupId>org.bouncycastle</groupId>
+  <artifactId>bcprov-jdk15on</artifactId>
+  <version>1.70</version>
+</dependency>
     </dependencies>
 </project>
