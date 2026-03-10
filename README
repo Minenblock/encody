@@ -6,4 +6,4 @@ A simple CLI-Tool that encrypts a File to a Hash (AES-GCM) with a given Password
 # How to use
 
 - git pull https://github.com/Minenblock/encody or download from Releases
-- run the encody class or run the jar file with "java -jar [path/to/file.jar]"
+- run the encody class or run the jar file with "java -jar [path/to/file].jar"
