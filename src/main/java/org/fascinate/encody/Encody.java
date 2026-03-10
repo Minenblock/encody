@@ -1,7 +1,6 @@
 package org.fascinate.encody;
 
 import java.io.File;
-import java.nio.file.Files;
 import java.util.Scanner;
 import javax.swing.JFileChooser;
 
@@ -35,8 +34,7 @@ public class Encody {
         System.out.println("Selected file: " + file.getAbsolutePath());
 
         // --- Optional: read file size for debugging ---
-        byte[] data = Files.readAllBytes(file.toPath());
-        System.out.println("File size: " + data.length + " bytes");
+        System.out.println("File size: " + file.length() + " bytes");
 
         // --- Ask user for password ---
         try (Scanner scanner = new Scanner(System.in)) {
