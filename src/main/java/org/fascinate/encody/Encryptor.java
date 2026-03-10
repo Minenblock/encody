@@ -64,26 +64,6 @@ public class Encryptor {
     public static final String RED = "\u001B[31m";
     public static final String GREEN = "\u001B[32m";
 
-    private static class FileBuffers {
-        final ByteBuffer inBuffer;
-        final byte[] tempArray;
-        final byte[] outArray;
-
-        FileBuffers(int bufferSize, Cipher cipher) {
-            this.inBuffer = ByteBuffer.allocate(bufferSize);
-            this.tempArray = new byte[bufferSize];
-            this.outArray = new byte[cipher.getOutputSize(bufferSize) + 128];
-        }
-    }
-
-    /**
-     * Allocates efficient buffers depending on file size.
-     * - Splitting into 2MB chunks for efficiency.
-     */
-    private static FileBuffers allocateBuffers(File file, Cipher cipher) {
-        return new FileBuffers(BUFFER_SIZE, cipher); // Fixe 2 MB Puffer
-    }
-
     /**
      * Encrypts a file using AES-GCM with a key derived from the given password.
      * The encrypted file will have ".enc.crypt" appended to its name.
