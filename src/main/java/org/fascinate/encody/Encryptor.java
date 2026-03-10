@@ -123,7 +123,7 @@ public class Encryptor {
             byte[] buffer = new byte[8192];
             SecureRandom rnd = new SecureRandom();
             long pos = 0;
-
+    
             while (pos < len) {
                 int writeLen = (int) Math.min(buffer.length, len - pos);
                 rnd.nextBytes(buffer);
@@ -135,7 +135,7 @@ public class Encryptor {
         } catch (IOException e) {
             System.err.println(RED + "Secure delete error: " + e.getMessage() + RESET);
         }
-
+    
         // Datei löschen
         if (!file.delete()) {
             System.err.println(RED + "Warning: Could not delete file!" + RESET);
